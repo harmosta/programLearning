@@ -11,6 +11,7 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: Scaffold(
         appBar: AppBar(
+          leading: Icon(Icons.air),
           title: Text("Flutter Uygulama"),
           backgroundColor: Colors.pink,
         ),
@@ -32,8 +33,8 @@ void main() {
               backgroundColor: Colors.purple,
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.view_list_sharp),
-              label: 'List',
+              icon:Icon(Icons.view_list_sharp),
+              label:'List',
               backgroundColor: Colors.red,
             ),
           ],
