@@ -27,14 +27,15 @@ void main() {
         // ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
-           // BottomNavigationBarItem(
-            //  icon: Icon(Icons.home),
-            //  label: 'Home',
-            //  backgroundColor: Colors.purple,
-           // ),
+           BottomNavigationBarItem(
+             icon: Icon(Icons.add_task_sharp),
+             label: 'Add Task',
+             backgroundColor: Colors.purple,
+             ),
+            
             BottomNavigationBarItem(
-              icon: Icon(Icons.view_list_sharp),
-              label: 'List',
+              icon: Icon(Icons.delete_sharp),
+              label: 'Delete',
               backgroundColor: Colors.red,
             ),
           ],
