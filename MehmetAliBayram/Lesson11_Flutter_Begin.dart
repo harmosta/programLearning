@@ -12,12 +12,14 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(),
+          body: Text("Burasi Sayfanin Ic Kismidir"),
+          // body: Text: ("11. video ders icerigidir."),
           // floatingActionButtonAnimator: FloatingActionButtonAnimator(),
           floatingActionButton: FloatingActionButton(
-            mini: true,
+            //mini: true,
             backgroundColor: Colors.pink,
             onPressed: islem,
-            child: Icon(Icons.facebook_rounded),
+            child: Icon(Icons.beach_access_sharp),
             // FloatingActionButtonLocation.centerFloat,
           )),
     ),
