@@ -50,6 +50,61 @@ void main() {
                   title: Text("Ders calis."),
                 ),
               ),
+              Card(
+                child: ListTile(
+                  title: Text("Ekmek al."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Elma al."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Bankaya git."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Ders calis."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Elma al."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Bankaya git."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Ders calis."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Ekmek al."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Elma al."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Bankaya git."),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  title: Text("Ders calis."),
+                ),
+              ),
             ],
           ),
         ),
