@@ -3,9 +3,10 @@ import "package:flutter/src/material/list_tile.dart";
 
 //import 'package:flutter/src/material/floating_action_button_location.dart';
 
-// void islem() {
-// print("Islem Gerceklesti.");
-// }
+void islem() {
+print("Islem Gerceklesti.");
+}
+
 
 void main() {
   runApp(
@@ -15,6 +16,12 @@ void main() {
       //  theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
+          actions: [
+            IconButton(
+              icon: Icon(Icons.umbrella),
+              onPressed: islem,
+            ),
+          ],
           leading: const Icon(Icons.task_alt),
           title: const Text(
             "Noticle",
@@ -32,8 +39,7 @@ void main() {
             children: [
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
+                child: Row(children: [
                   Icon(Icons.search),
                   Icon(Icons.search),
                   Icon(Icons.search),
@@ -61,7 +67,7 @@ void main() {
                   Icon(Icons.search),
                   Icon(Icons.search),
                 ]),
-          ),]
+              ),
               Card(
                 child: ListTile(
                   title: Text("Ekmek al."),
@@ -74,7 +80,8 @@ void main() {
               ),
               Card(
                 child: ListTile(
-                  title: Text("Bankaya git.fagfdh afhnymnhsgfhsnfghmsfgjfsjfs jsfgjfsgjsf"),
+                  title: Text(
+                      "Bankaya git.fagfdh afhnymnhsgfhsnfghmsfgjfsjfs jsfgjfsgjsf"),
                 ),
               ),
               Card(
