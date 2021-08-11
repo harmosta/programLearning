@@ -29,7 +29,39 @@ void main() {
         ),
         body: Center(
           child: ListView(
-            children: const [
+            children: [
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                  Icon(Icons.search),
+                ]),
+          ),]
               Card(
                 child: ListTile(
                   title: Text("Ekmek al."),
@@ -42,7 +74,7 @@ void main() {
               ),
               Card(
                 child: ListTile(
-                  title: Text("Bankaya git."),
+                  title: Text("Bankaya git.fagfdh afhnymnhsgfhsnfghmsfgjfsjfs jsfgjfsgjsf"),
                 ),
               ),
               Card(
