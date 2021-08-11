@@ -1,180 +1,103 @@
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
 import 'package:flutter/material.dart';
-import "package:flutter/src/material/list_tile.dart";
 
-//import 'package:flutter/src/material/floating_action_button_location.dart';
-
-void islem() {
-print("Islem Gerceklesti.");
+void islem(){
+  print("Islem Gerceklestirildi!");
 }
 
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Noticle",
-      //  theme: ThemeData.dark(),
-      home: Scaffold(
-        appBar: AppBar(
-          actions: [
-            IconButton(
-              icon: Icon(Icons.umbrella),
-              onPressed: islem,
-            ),
-          ],
-          leading: const Icon(Icons.task_alt),
-          title: const Text(
-            "Noticle",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: (30),
-              fontWeight: FontWeight.normal,
-            ),
-          ),
-          backgroundColor: Colors.pink,
-          centerTitle: true,
-        ),
-        body: Center(
-          child: ListView(
-            children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(children: [
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                  Icon(Icons.search),
-                ]),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ekmek al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Elma al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text(
-                      "Bankaya git.fagfdh afhnymnhsgfhsnfghmsfgjfsjfs jsfgjfsgjsf"),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ders calis."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ekmek al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Elma al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Bankaya git."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ders calis."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Elma al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Bankaya git."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ders calis."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ekmek al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Elma al."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Bankaya git."),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  title: Text("Ders calis."),
-                ),
-              ),
-            ],
-          ),
-        ),
+void main() => runApp(MyApp());
 
-        //const Text("Burasi Sayfanin Ic Kismidir"),
-        // body: Text: ("11. video ders icerigidir."),
-        // floatingActionButtonAnimator: FloatingActionButtonAnimator(),
-        // floatingActionButton: FloatingActionButton(
-        // mini: true,
-        // backgroundColor: Colors.pink,
-        // onPressed: islem,
-        // child: Icon(Icons.beach_access_sharp),
-        // FloatingActionButtonLocation.centerFloat,
-        // ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.add_task_sharp),
-              label: 'Add Task',
-              backgroundColor: Colors.purple,
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.delete_sharp),
-              label: 'Delete',
-              backgroundColor: Colors.red,
-            ),
-          ],
-        ),
-        drawer: const Drawer(),
-        drawerScrimColor: Colors.pink,
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
-    ),
-  );
+      home: MyHomePage(title: 'Flutter'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text ('$_counter'),
+        leading: IconButton (
+          icon: Icon(Icons.add),
+        onPressed: _incrementCounter
+        ),
+        //title: Text(widget.title),
+      ),
+      body: Center(
+        child: ListView(
+          children: [
+            if(_counter>10)
+            SingleChildScrollView (
+              scrollDirection: Axis.horizontal,
+              child: Row(children:[
+                Icon(Icons.search),                
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),                
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),                
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),                
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),                
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                Icon(Icons.search),
+                
+              ],
+              ),
+            ),
+          ],          
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
 }
