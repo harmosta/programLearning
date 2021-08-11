@@ -28,7 +28,7 @@ void main() {
           centerTitle: true,
         ),
         body: Center(
-          child: Column(
+          child: ListView(
             children: const [
               Card(
                 child: ListTile(
