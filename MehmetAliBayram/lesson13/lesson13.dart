@@ -65,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Icon(Icons.search),
                 Icon(Icons.search),
                 Icon(Icons.search),
-                Icon(Icons.search),
                 Icon(Icons.search),                
                 Icon(Icons.search),
                 Icon(Icons.search),
