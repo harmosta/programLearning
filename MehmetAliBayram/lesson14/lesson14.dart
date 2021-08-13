@@ -14,7 +14,7 @@ void main() {
     print("Tebrikler kullanici adininiz m, t, e harflerini icermemektedir.");
   }
 
-  int abrt = 35;
+  int abrt = 7;
 
   if (abrt == 0)
     print("Aklinizdan tuttugunuz rakam 0 dir.");
@@ -28,7 +28,7 @@ void main() {
     print("Aklinizdan tuttugunuz rakam 4 dir.");
   else if (abrt == 5)
     print("Aklinizdan tuttugunuz rakam 5 dir.");
-  else if (abrt == 6) 
+  else if (abrt == 6)
     print("Aklinizdan tuttugunuz rakam 6 dir.");
   else if (abrt == 7)
     print("Aklinizdan tuttugunuz rakam 7 dir.");
@@ -37,5 +37,37 @@ void main() {
   else if (abrt == 9)
     print("Aklinizdan tuttugunuz rakam 9 dir.");
   else
-    print ("Aklinizdaki rakami bulamadim.");
+    print("Aklinizdaki rakami bulamadim.");
+
+  switch (abrt) {
+    case 0:
+      print("Aklinizda tuttugunuz rakam 0 dir.");
+      break;
+    case 1:
+      print("Aklinizda tuttugunuz rakam 1 dir.");
+      break;
+    case 2:
+      print("Aklinizda tuttugunuz rakam 2 dir.");
+      break;
+    case 3:
+      print("Aklinizda tuttugunuz rakam 3 dir.");
+      break;
+    case 4:
+      print("Aklinizda tuttugunuz rakam 4 dir.");
+      break;
+    case 5:
+      print("Aklinizda tuttugunuz rakam 5 dir.");
+      break;
+    case 6:
+      print("Aklinizda tuttugunuz rakam 6 dir.");
+      break;
+    case 7:
+      print("Aklinizda tuttugunuz rakam 7 dir.");
+      break;
+    case 8:
+      print("Aklinizda tuttugunuz rakam 8 dir.");
+      break;
+    case 9:
+      print("Aklinizda tuttugunuz rakam 9 dir.");
+  }
 }
