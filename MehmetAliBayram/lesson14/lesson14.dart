@@ -2,11 +2,14 @@
 
 void main (){
   
- String kullaniciAdi = "MehmetfSF544a4f6AD4F";
+ String kullaniciAdi = "MehaetfSF544a4f6AD4F";
   
- if (kullaniciAdi.contains ("m"))
+ if (kullaniciAdi.contains ("m") || kullaniciAdi.contains ("M"))
  {
   print ("Kullanici adi m harfi icermemelidir.");
- // print ("Lutfen 10 karakterden uzun kullanici adi giriniz.");
+    // print ("Lutfen 10 karakterden uzun kullanici adi giriniz.");
  }
+  else {
+    print ("Tebrikler kullanici adini m harfini icermemektedir.");
+  }
 }
