@@ -1,10 +1,12 @@
-void main(){
+//import 'package:flutter/material.dart';
 
-String kullaniciAdi = "Mehmet";
-
-if (kullaniciAdi.length < 10)
-print ("Kullanici adi 10 karakterden kisa olamaz.");
-
-print ("Lutfen 10 karakterden uzun kullanici adi giriniz.");
-
+void main (){
+  
+ String kullaniciAdi = "MehmetfSF544a4f6AD4F";
+  
+ if (kullaniciAdi.contains ("m"))
+ {
+  print ("Kullanici adi m harfi icermemelidir.");
+ // print ("Lutfen 10 karakterden uzun kullanici adi giriniz.");
+ }
 }
