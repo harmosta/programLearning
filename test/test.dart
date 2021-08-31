@@ -24,4 +24,9 @@ print (sonuc);
 
 islem1.call();
 print('Islem2 gerceklesti.');
+
+int sayi;
+  for (sayi = 0; sayi < 20; sayi = sayi + 2);
+  print("Sayi = $sayi");
+
 }
